@@ -13,7 +13,7 @@ The ``@Template`` annotation associates a controller with a template name::
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
     /**
-     * @Template("@SensioBlog/Post/show.html.twig")
+     * @Template("@SensioBlog/post/show.html.twig")
      */
     public function showAction($id)
     {
@@ -64,7 +64,7 @@ useful in combination with the ``@ParamConverter`` :doc:`annotation
 
     /**
      * @ParamConverter("post", class="SensioBlogBundle:Post")
-     * @Template("@SensioBlog/Post/show.html.twig", vars={"post"})
+     * @Template("@SensioBlog/post/show.html.twig", vars={"post"})
      */
     public function showAction(Post $post)
     {
